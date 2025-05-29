@@ -1,0 +1,1824 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Automation Result</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">
+<img src='HRSoft-logo-scaled.png' style='position:absolute;left:-295px;top:3px;height:85%;max-width:59%;'/>
+HR Soft Smoke Test Report
+</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 14, 2023 15:21:55</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">SrinivasAnnameni</a><a class="dropdown-item" href="#">KiranYajjala</a><a class="dropdown-item" href="#">MashoodKhan</a><a class="dropdown-item" href="#">KalyanKomati</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Component-RewardView</a><a class="dropdown-item" href="#">Component-Compensation</a><a class="dropdown-item" href="#">Component-DataView</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author="KiranYajjala"
+          tag="Component-RewardView"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM29_RewardsView_SearchForManagersGroups</p>
+            <p class="text-sm">
+              <span>3:22:02 PM</span> / <span>00:00:00:788</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SM29_RewardsView_SearchForManagersGroups</h5>
+<span class='badge badge-success'>07.14.2023 3:22:02 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:22:03 PM</span>
+<span class='badge badge-default'>00:00:00:788</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">KiranYajjala</span>
+<span class="badge badge-pill badge-default">Component-RewardView</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:02 PM</td>
+        <td>
+          Test scipt execution started: SM29_RewardsView_SearchForManagersGroups
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:02 PM</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.lang.reflect.InvocationHandler.invoke(Object<br> java.lang.reflect.Method<br> Object[])" is null
+[jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)<br> com.hrsoft.db.CompViewDbHelper.getEmployeesByManagerGuid(CompViewDbHelper.java:407)<br> com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM29_RewardsView_SearchForManagersGroups(ManagerViewTestSuite.java:108)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:03 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Fri_Jul_14_15_22_03_UTC_2023_SM29_.jpg' src="Fri_Jul_14_15_22_03_UTC_2023_SM29_.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:03 PM</td>
+        <td>
+          <span class='badge white-text red'>TEST CASE FAILED</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author="KiranYajjala"
+          tag="Component-RewardView"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM30_RewardsView_SearchForManagerGroup_ThroughEmployee</p>
+            <p class="text-sm">
+              <span>3:22:05 PM</span> / <span>00:00:00:481</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SM30_RewardsView_SearchForManagerGroup_ThroughEmployee</h5>
+<span class='badge badge-success'>07.14.2023 3:22:05 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:22:06 PM</span>
+<span class='badge badge-default'>00:00:00:481</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">KiranYajjala</span>
+<span class="badge badge-pill badge-default">Component-RewardView</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:05 PM</td>
+        <td>
+          Test scipt execution started: SM30_RewardsView_SearchForManagerGroup_ThroughEmployee
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:05 PM</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.lang.reflect.InvocationHandler.invoke(Object<br> java.lang.reflect.Method<br> Object[])" is null
+[jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)<br> com.hrsoft.db.CompViewDbHelper.getEmployeesByManagerGuid(CompViewDbHelper.java:407)<br> com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM30_RewardsView_SearchForManagerGroup_ThroughEmployee(ManagerViewTestSuite.java:142)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:06 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Fri_Jul_14_15_22_06_UTC_2023_SM30_.jpg' src="Fri_Jul_14_15_22_06_UTC_2023_SM30_.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:06 PM</td>
+        <td>
+          <span class='badge white-text red'>TEST CASE FAILED</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="SrinivasAnnameni"
+          tag="Component-RewardView"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails</p>
+            <p class="text-sm">
+              <span>3:22:08 PM</span> / <span>00:01:01:023</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails</h5>
+<span class='badge badge-success'>07.14.2023 3:22:08 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:23:09 PM</span>
+<span class='badge badge-default'>00:01:01:023</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">SrinivasAnnameni</span>
+<span class="badge badge-pill badge-default">Component-RewardView</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:08 PM</td>
+        <td>
+          Test scipt execution started: SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:16 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:19 PM</td>
+        <td>
+          Opened manager view page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:58 PM</td>
+        <td>
+          selected Tushar Ghoshal as manager
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:09 PM</td>
+        <td>
+          <span class='badge white-text green'><b>TEST CASE:- SM_23_REWARDSVIEWMANAGERVIEWSHAREFUNCTIONALFAILIFPLANFAILS PASSED</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author="MashoodKhan"
+          tag="Component-DataView"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue</p>
+            <p class="text-sm">
+              <span>3:23:12 PM</span> / <span>00:01:38:579</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue</h5>
+<span class='badge badge-success'>07.14.2023 3:23:12 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:24:50 PM</span>
+<span class='badge badge-default'>00:01:38:579</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">MashoodKhan</span>
+<span class="badge badge-pill badge-default">Component-DataView</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:12 PM</td>
+        <td>
+          Test scipt execution started: SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:17 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:24:33 PM</td>
+        <td>
+          let's give waitForElementVisible another try ...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:24:33 PM</td>
+        <td>
+          ok, it's done ...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:24:50 PM</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>Expected condition failed: waiting for visibility of element located by By.xpath: //div[@itemid='GRID_2344943517659758']//div[@column='0']/div/input (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0'<br> revision: 'c14d967899'
+System info: os.name: 'Windows Server 2022'<br> os.arch: 'amd64'<br> os.version: '10.0'<br> java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false<br> browserName: msedge<br> browserVersion: 114.0.1823.67<br> ms:edgeOptions: {debuggerAddress: localhost:55174}<br> msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6...<br> userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}<br> networkConnectionEnabled: false<br> pageLoadStrategy: normal<br> platformName: windows<br> proxy: Proxy()<br> se:cdp: ws://localhost:55174/devtoo...<br> se:cdpVersion: 114.0.1823.67<br> setWindowRect: true<br> strictFileInteractability: false<br> timeouts: {implicit: 0<br> pageLoad: 300000<br> script: 30000}<br> unhandledPromptBehavior: dismiss and notify<br> webauthn:extension:credBlob: true<br> webauthn:extension:largeBlob: true<br> webauthn:extension:minPinLength: true<br> webauthn:extension:prf: true<br> webauthn:virtualAuthenticators: true}
+Session ID: ee2bf69a1f3e6ebce779a859fffa2eeb
+[org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)<br> org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)<br> com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:409)<br> com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:387)<br> com.hrsoft.utils.seleniumfy.BasePage.click(BasePage.java:617)<br> com.hrsoft.gui.dataview.DataViewPage.selectAndAddSearchedGroup(DataViewPage.java:574)<br> com.hrsoft.test.dataview.DataViewTestSuite.SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue(DataViewTestSuite.java:695)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:24:50 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Fri_Jul_14_15_24_50_UTC_2023_SM50_.jpg' src="Fri_Jul_14_15_24_50_UTC_2023_SM50_.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:24:50 PM</td>
+        <td>
+          <span class='badge white-text red'>TEST CASE FAILED</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="MashoodKhan"
+          tag="Component-DataView"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid</p>
+            <p class="text-sm">
+              <span>3:24:53 PM</span> / <span>00:00:41:832</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid</h5>
+<span class='badge badge-success'>07.14.2023 3:24:53 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:25:35 PM</span>
+<span class='badge badge-default'>00:00:41:832</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">MashoodKhan</span>
+<span class="badge badge-pill badge-default">Component-DataView</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:24:53 PM</td>
+        <td>
+          Test scipt execution started: SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:24:58 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:25:35 PM</td>
+        <td>
+          <span class='badge white-text green'><b>TEST CASE:- SM_57_DATAVIEWREPORT_GROUP_BY_DROPDOWN_IN_THE_GRID PASSED</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="SrinivasAnnameni"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_14_CompViewPlanningVerifyCoPlannerField</p>
+            <p class="text-sm">
+              <span>3:25:37 PM</span> / <span>00:02:17:298</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SM_14_CompViewPlanningVerifyCoPlannerField</h5>
+<span class='badge badge-success'>07.14.2023 3:25:37 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:27:54 PM</span>
+<span class='badge badge-default'>00:02:17:298</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">SrinivasAnnameni</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:25:37 PM</td>
+        <td>
+          Test scipt execution started: SM_14_CompViewPlanningVerifyCoPlannerField
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:25:43 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:24 PM</td>
+        <td>
+          proxied as anvita.priyam user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:44 PM</td>
+        <td>
+          Clicked on link to navigate to Comp planning page for PLAN Salary Below 80k (User, Admin)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:54 PM</td>
+        <td>
+          Salary Below 80k (User, Admin)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:27:54 PM</td>
+        <td>
+          <span class='badge white-text green'><b>TEST CASE:- SM_14_COMPVIEWPLANNINGVERIFYCOPLANNERFIELD PASSED</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author="SrinivasAnnameni"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob</p>
+            <p class="text-sm">
+              <span>3:27:57 PM</span> / <span>00:03:41:340</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob</h5>
+<span class='badge badge-success'>07.14.2023 3:27:57 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:31:39 PM</span>
+<span class='badge badge-default'>00:03:41:340</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">SrinivasAnnameni</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:57 PM</td>
+        <td>
+          Test scipt execution started: SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:02 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:09 PM</td>
+        <td>
+          proxied as tushar.ghoshal user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:20 PM</td>
+        <td>
+          Navigated to Comp planning page for the corresponding proxy user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:25 PM</td>
+        <td>
+          org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//td[@typecode='WS_Component_Actual_Amount@2']//input[@type='text'][@showtooltip='true'])[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [02e604e49e9510b390169d86c7eff2e1, findElement {using=xpath, value=(//td[@typecode='WS_Component_Actual_Amount@2']//input[@type='text'][@showtooltip='true'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55430}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55430/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02e604e49e9510b390169d86c7eff2e1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:30:59 PM</td>
+        <td>
+          proxied as tushar.ghoshal user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:10 PM</td>
+        <td>
+          Navigated to Comp planning page for the corresponding proxy user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:38 PM</td>
+        <td>
+          org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//td[@typecode='WS_Component_Actual_Amount@2']//input[@type='text'][@showtooltip='true'])[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [02e604e49e9510b390169d86c7eff2e1, findElement {using=xpath, value=(//td[@typecode='WS_Component_Actual_Amount@2']//input[@type='text'][@showtooltip='true'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55430}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55430/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02e604e49e9510b390169d86c7eff2e1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:31:38 PM</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>expected [true] but found [false]
+[org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.failNotEquals(Assert.java:1578)<br> org.testng.Assert.assertTrue(Assert.java:57)<br> org.testng.Assert.assertTrue(Assert.java:67)<br> com.hrsoft.test.compensation.CompOverviewTestSuite.SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob(CompOverviewTestSuite.java:161)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:31:39 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Fri_Jul_14_15_31_39_UTC_2023_SM_19.jpg' src="Fri_Jul_14_15_31_39_UTC_2023_SM_19.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:31:39 PM</td>
+        <td>
+          <span class='badge white-text red'>TEST CASE FAILED</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="SrinivasAnnameni"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_16_CompViewReviewPage_PlanningPaginationAndScrolling</p>
+            <p class="text-sm">
+              <span>3:31:41 PM</span> / <span>00:01:58:010</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SM_16_CompViewReviewPage_PlanningPaginationAndScrolling</h5>
+<span class='badge badge-success'>07.14.2023 3:31:41 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:33:39 PM</span>
+<span class='badge badge-default'>00:01:58:010</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">SrinivasAnnameni</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:41 PM</td>
+        <td>
+          Test scipt execution started: SM_16_CompViewReviewPage_PlanningPaginationAndScrolling
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:47 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:32:06 PM</td>
+        <td>
+          proxied as tushar.ghoshal user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:32:18 PM</td>
+        <td>
+          Navigated to Comp Reviewing page for the corresponding proxy user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:06 PM</td>
+        <td>
+          proxied as tushar.ghoshal user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:18 PM</td>
+        <td>
+          Navigated to Comp Reviewing page for the corresponding proxy user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:38 PM</td>
+        <td>
+          org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#paginationList"}
+  (Session info: MicrosoftEdge=114.0.1823.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [38d9cd9f189502801ef7641eb573d61d, findElement {using=css selector, value=#paginationList}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55573}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55573/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38d9cd9f189502801ef7641eb573d61d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:33:39 PM</td>
+        <td>
+          <span class='badge white-text green'><b>TEST CASE:- SM_16_COMPVIEWREVIEWPAGE_PLANNINGPAGINATIONANDSCROLLING PASSED</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author="MashoodKhan"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible</p>
+            <p class="text-sm">
+              <span>3:33:42 PM</span> / <span>00:00:55:458</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible</h5>
+<span class='badge badge-success'>07.14.2023 3:33:42 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:34:37 PM</span>
+<span class='badge badge-default'>00:00:55:458</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">MashoodKhan</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:42 PM</td>
+        <td>
+          Test scipt execution started: SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:46 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:53 PM</td>
+        <td>
+          Navigated to Manage plans page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:53 PM</td>
+        <td>
+          Opened manage plans for 163
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:34:21 PM</td>
+        <td>
+          Clicked on link to navigate to Comp planning page for Joe Poxson
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:34:37 PM</td>
+        <td>
+          <span class='badge white-text green'><b>TEST CASE:- SM_129_COMPENSATION_VERIFYEMPHISTORYCOLUMNANDHISTORYAREVISIBLE PASSED</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="10"
+          author="SrinivasAnnameni"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_139_SM140_PlanningGrid_Verifications</p>
+            <p class="text-sm">
+              <span>3:34:40 PM</span> / <span>00:01:22:686</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SM_139_SM140_PlanningGrid_Verifications</h5>
+<span class='badge badge-success'>07.14.2023 3:34:40 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:36:03 PM</span>
+<span class='badge badge-default'>00:01:22:686</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">SrinivasAnnameni</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:34:40 PM</td>
+        <td>
+          Test scipt execution started: SM_139_SM140_PlanningGrid_Verifications
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:34:47 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:34:59 PM</td>
+        <td>
+          proxied as tushar.ghoshal user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:35:11 PM</td>
+        <td>
+          Navigated to Comp planning page for the corresponding proxy user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:35:52 PM</td>
+        <td>
+          let's give waitForElementClickable another try ...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:35:52 PM</td>
+        <td>
+          ok, it's done ...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:36:02 PM</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>Expected condition failed: waiting for element to be clickable: By.xpath: //input[@actiontype='ResetGroupAwards'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0'<br> revision: 'c14d967899'
+System info: os.name: 'Windows Server 2022'<br> os.arch: 'amd64'<br> os.version: '10.0'<br> java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false<br> browserName: msedge<br> browserVersion: 114.0.1823.67<br> ms:edgeOptions: {debuggerAddress: localhost:55774}<br> msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6...<br> userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}<br> networkConnectionEnabled: false<br> pageLoadStrategy: normal<br> platformName: windows<br> proxy: Proxy()<br> se:cdp: ws://localhost:55774/devtoo...<br> se:cdpVersion: 114.0.1823.67<br> setWindowRect: true<br> strictFileInteractability: false<br> timeouts: {implicit: 0<br> pageLoad: 300000<br> script: 30000}<br> unhandledPromptBehavior: dismiss and notify<br> webauthn:extension:credBlob: true<br> webauthn:extension:largeBlob: true<br> webauthn:extension:minPinLength: true<br> webauthn:extension:prf: true<br> webauthn:virtualAuthenticators: true}
+Session ID: 7b470129a35547e97364980f5453a548
+[org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)<br> org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)<br> com.hrsoft.utils.seleniumfy.BasePage.waitForElementClickable(BasePage.java:534)<br> com.hrsoft.utils.seleniumfy.BasePage.waitForElementClickable(BasePage.java:512)<br> com.hrsoft.utils.seleniumfy.BasePage.click(BasePage.java:618)<br> com.hrsoft.gui.compensation.PlanningPage.clickResetAwards(PlanningPage.java:326)<br> com.hrsoft.test.compensation.PlanningPageTestSuite.SM_139_SM140_PlanningGrid_Verifications(PlanningPageTestSuite.java:244)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:36:03 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Fri_Jul_14_15_36_03_UTC_2023_SM_13.jpg' src="Fri_Jul_14_15_36_03_UTC_2023_SM_13.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:36:03 PM</td>
+        <td>
+          <span class='badge white-text red'>TEST CASE FAILED</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author="MashoodKhan"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved</p>
+            <p class="text-sm">
+              <span>3:36:05 PM</span> / <span>00:00:50:133</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved</h5>
+<span class='badge badge-success'>07.14.2023 3:36:05 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:36:55 PM</span>
+<span class='badge badge-default'>00:00:50:133</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">MashoodKhan</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:36:05 PM</td>
+        <td>
+          Test scipt execution started: SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:36:14 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:36:55 PM</td>
+        <td>
+          org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@originalvalue,' Test Automation NCI')]"}
+  (Session info: MicrosoftEdge=114.0.1823.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c65f265fae84eef075a48a4ea201128d, findElement {using=xpath, value=//span[contains(@originalvalue,' Test Automation NCI')]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55856}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55856/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c65f265fae84eef075a48a4ea201128d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:36:55 PM</td>
+        <td>
+          <span class='badge white-text green'><b>TEST CASE:- SM_183_MODELVIEW_EDITSESSIONANDDISCARDITANDVERIFYSESSIONGOTREMOVED PASSED</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author="MashoodKhan"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus</p>
+            <p class="text-sm">
+              <span>3:36:58 PM</span> / <span>00:01:13:113</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus</h5>
+<span class='badge badge-success'>07.14.2023 3:36:58 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:38:11 PM</span>
+<span class='badge badge-default'>00:01:13:113</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">MashoodKhan</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:36:58 PM</td>
+        <td>
+          Test scipt execution started: SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:03 PM</td>
+        <td>
+          Logged in as: admin_user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:53 PM</td>
+        <td>
+          let's give waitForElementVisible another try ...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:37:54 PM</td>
+        <td>
+          ok, it's done ...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:11 PM</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Discarded'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0'<br> revision: 'c14d967899'
+System info: os.name: 'Windows Server 2022'<br> os.arch: 'amd64'<br> os.version: '10.0'<br> java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false<br> browserName: msedge<br> browserVersion: 114.0.1823.67<br> ms:edgeOptions: {debuggerAddress: localhost:55927}<br> msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6...<br> userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}<br> networkConnectionEnabled: false<br> pageLoadStrategy: normal<br> platformName: windows<br> proxy: Proxy()<br> se:cdp: ws://localhost:55927/devtoo...<br> se:cdpVersion: 114.0.1823.67<br> setWindowRect: true<br> strictFileInteractability: false<br> timeouts: {implicit: 0<br> pageLoad: 300000<br> script: 30000}<br> unhandledPromptBehavior: dismiss and notify<br> webauthn:extension:credBlob: true<br> webauthn:extension:largeBlob: true<br> webauthn:extension:minPinLength: true<br> webauthn:extension:prf: true<br> webauthn:virtualAuthenticators: true}
+Session ID: af5573738b37b5acce49f531be1f3a19
+[org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)<br> org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)<br> com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:409)<br> com.hrsoft.utils.seleniumfy.BasePage.getText(BasePage.java:1431)<br> com.hrsoft.utils.seleniumfy.BasePage.getText(BasePage.java:1421)<br> com.hrsoft.gui.modelview.ModelViewPage.statusList(ModelViewPage.java:81)<br> com.hrsoft.test.modelview.ModelViewTestSuite.SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus(ModelViewTestSuite.java:86)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:11 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Fri_Jul_14_15_38_11_UTC_2023_SM_18.jpg' src="Fri_Jul_14_15_38_11_UTC_2023_SM_18.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:11 PM</td>
+        <td>
+          <span class='badge white-text red'>TEST CASE FAILED</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author="KalyanKomati"
+          tag="Component-Compensation"
+          device="">
+          <div class="test-detail">
+            <p class="name">SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav</p>
+            <p class="text-sm">
+              <span>3:38:14 PM</span> / <span>00:00:01:345</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav</h5>
+<span class='badge badge-success'>07.14.2023 3:38:14 PM</span>
+<span class='badge badge-danger'>07.14.2023 3:38:16 PM</span>
+<span class='badge badge-default'>00:00:01:345</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">KalyanKomati</span>
+<span class="badge badge-pill badge-default">Component-Compensation</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:38:14 PM</td>
+        <td>
+          Test scipt execution started: SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:14 PM</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.lang.reflect.InvocationHandler.invoke(Object<br> java.lang.reflect.Method<br> Object[])" is null
+[jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)<br> com.hrsoft.test.common.GenericTestSuite.SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav(GenericTestSuite.java:139)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:16 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Fri_Jul_14_15_38_15_UTC_2023_SM_09.jpg' src="Fri_Jul_14_15_38_15_UTC_2023_SM_09.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:16 PM</td>
+        <td>
+          <span class='badge white-text red'>TEST CASE FAILED</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">Component-RewardView</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Component-RewardView</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>SM29_RewardsView_SearchForManagersGroups</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>SM30_RewardsView_SearchForManagerGroup_ThroughEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">Component-Compensation</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Component-Compensation</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:25:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>SM_14_CompViewPlanningVerifyCoPlannerField</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:27:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>SM_16_CompViewReviewPage_PlanningPaginationAndScrolling</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:34:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>SM_139_SM140_PlanningGrid_Verifications</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:36:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:36:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:38:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Component-DataView</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Component-DataView</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:23:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:24:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">SrinivasAnnameni</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>SrinivasAnnameni</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:25:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>SM_14_CompViewPlanningVerifyCoPlannerField</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:27:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>SM_16_CompViewReviewPage_PlanningPaginationAndScrolling</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:34:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>SM_139_SM140_PlanningGrid_Verifications</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">KiranYajjala</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>KiranYajjala</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>SM29_RewardsView_SearchForManagersGroups</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>SM30_RewardsView_SearchForManagerGroup_ThroughEmployee</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">MashoodKhan</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>MashoodKhan</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:23:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:24:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:36:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:36:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">KalyanKomati</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>KalyanKomati</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:38:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 14, 2023 15:21:55</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 14, 2023 15:38:17</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>6</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>7</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='46%'>
+<b>6</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='53%'><b>7</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='7%'><b>6</b> events passed</small></div>
+<div>
+<small data-tooltip='26%'><b>21</b> events failed,
+<b data-tooltip='%'>51</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"SM29_RewardsView_SearchForManagersGroups":0.788,"SM30_RewardsView_SearchForManagerGroup_ThroughEmployee":0.481,"SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails":61.023,"SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue":98.579,"SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid":41.832,"SM_14_CompViewPlanningVerifyCoPlannerField":137.298,"SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob":221.34,"SM_16_CompViewReviewPage_PlanningPaginationAndScrolling":118.01,"SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible":55.458,"SM_139_SM140_PlanningGrid_Verifications":82.686,"SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved":50.133,"SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus":73.113,"SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav":1.345
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>SrinivasAnnameni</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>KiranYajjala</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>MashoodKhan</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>KalyanKomati</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Component-RewardView</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>33.333%</td>
+</tr>
+<tr>
+<td>Component-Compensation</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>Component-DataView</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Automation Tester</td>
+<td>HRSoft Automation Team</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>HR SOft</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>SQA</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 6,
+failParent: 7,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 6,
+failEvents: 21,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 51
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

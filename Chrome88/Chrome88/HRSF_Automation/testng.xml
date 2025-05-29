@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="3">
+	<listeners>
+		<listener class-name="com.hrsoft.reports.ExtentListener"/>
+	</listeners>
+  <test  name="Test">
+    <classes>
+      <class name="com.hrsoft.test.compensation.PlanningPageTestSuite">
+		  <methods>
+			  <include name="SM_150_152_CompensationJobRecommendation_VerifyJobRecommendationAndRevertingFunctionality"/>
+		  </methods>
+		  </class>
+      
+		<!--<class name="com.hrsoft.test.common.LoginLogoutTestSuite"/>-->
+     <!-- <class name="com.hrsoft.test.datamanagement.FileFeedTestSuite"/>	-->
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

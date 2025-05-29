@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.hrsoft.reports.ExtentListener"/>
+  </listeners>
+  <test thread-count="1" name="Test(failed)(failed)">
+    <classes>
+      <class name="com.hrsoft.test.modelview.ModelViewTestSuite">
+        <methods>
+          <include name="SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.modelview.ModelViewTestSuite -->
+      <class name="com.hrsoft.test.dataview.DataViewTestSuite">
+        <methods>
+          <include name="SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.dataview.DataViewTestSuite -->
+      <class name="com.hrsoft.test.compensation.PlanningPageTestSuite">
+        <methods>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_139_SM140_PlanningGrid_Verifications" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.PlanningPageTestSuite -->
+      <class name="com.hrsoft.test.compensation.CompOverviewTestSuite">
+        <methods>
+          <include name="SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.CompOverviewTestSuite -->
+      <class name="com.hrsoft.test.common.GenericTestSuite">
+        <methods>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.common.GenericTestSuite -->
+      <class name="com.hrsoft.test.rewardsview.ManagerViewTestSuite">
+        <methods>
+          <include name="SM29_RewardsView_SearchForManagersGroups" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM30_RewardsView_SearchForManagerGroup_ThroughEmployee" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.rewardsview.ManagerViewTestSuite -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

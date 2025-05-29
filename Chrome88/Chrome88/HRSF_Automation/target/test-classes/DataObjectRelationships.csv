@@ -1,0 +1,2 @@
+Relationship Type,Parent Table,Child Table,Foreign Key
+One-to-One,Employee,Employee_Eligibility,employee_id

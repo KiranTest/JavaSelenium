@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.hrsoft.reports.ExtentListener"/>
+  </listeners>
+  <test thread-count="5" name="SmokeTest(failed)">
+    <classes>
+      <class name="com.hrsoft.test.dataview.DataViewTestSuite">
+        <methods>
+          <include name="SM46_49_Dataview_DataviewExplorer_SearchAnyGroupAndReset" invocation-numbers="0"/>
+          <include name="SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.dataview.DataViewTestSuite -->
+      <class name="com.hrsoft.test.datamanagement.FileFeedRegressionTestSuite">
+        <methods>
+          <include name="RG_UMEI_FILE_10_UMEI_importForTerminatingUser" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="RG_UMEI_FILE_03_UMEI_validateAndImportShouldFailForUserRoleExceding" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.datamanagement.FileFeedRegressionTestSuite -->
+      <class name="com.hrsoft.test.rewardsview.ManagerViewTestSuite">
+        <methods>
+          <include name="SM29_RewardsView_SearchForManagersGroups" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails" invocation-numbers="0"/>
+          <include name="SM_20_21_RewardsView_ManagerViewDownloadStatements" invocation-numbers="0"/>
+          <include name="SM30_RewardsView_SearchForManagerGroup_ThroughEmployee" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.rewardsview.ManagerViewTestSuite -->
+      <class name="com.hrsoft.test.compensation.PlanningPageTestSuite">
+        <methods>
+          <include name="SM_116_PlanningPageTest_ChangeColumnOrder" invocation-numbers="0"/>
+          <include name="SM_148_CompensationEmployeeDetails_IsEmpSpareHistoryReportVisible" invocation-numbers="0"/>
+          <include name="SM_149_CompensationJobSearch_SearchJobsBasedOnCriterias" invocation-numbers="0"/>
+          <include name="SM_138_PlanningGrid_ColorChangeToGrey" invocation-numbers="0"/>
+          <include name="SM_146_147_CompensationEmployeeDetails_VerifyingEmployeeAwardAmountValue" invocation-numbers="0"/>
+          <include name="SM_31_CompViewPlanningPage_ShowOnlyEligibleEmployees" invocation-numbers="0"/>
+          <include name="SM_150_152_CompensationJobRecommendation_VerifyJobRecommendationAndRevertingFunctionality" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="SM_127_SM128_SM130_SM131_PlanningGrid_Verifications" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="SM_132_To_137_PlanningGrid_Verifications" invocation-numbers="0"/>
+          <include name="SM_139_SM140_PlanningGrid_Verifications" invocation-numbers="0"/>
+          <include name="SM_155_Compensation_displayCorrectReportsAtSupportingDataSection" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.PlanningPageTestSuite -->
+      <class name="com.hrsoft.test.compensation.ReviewingPageTestSuite">
+        <methods>
+          <include name="SM_170_CompensationReview_VerifyGroupValuesShouldChangeOnGroupsSwitch" invocation-numbers="0"/>
+          <include name="SM_16_CompViewReviewPage_PlanningPaginationAndScrolling" invocation-numbers="0"/>
+          <include name="SM_169_CompensationReview_VerifyBudgetValuesShouldChangeOnGroupsSwitch" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_160_CompensationReview_CannotSubmitGroupWhenThereIsRedAlert" invocation-numbers="0"/>
+          <include name="SM_166_CompensationReview_perfromDrillDownDrillupOperations" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.ReviewingPageTestSuite -->
+      <class name="com.hrsoft.test.homepage.HomePageTestSuite">
+        <methods>
+          <include name="SM_64_To_SM77_HomePage_CompensationReport_VerifyClickFunctions" invocation-numbers="0"/>
+          <include name="SM_61_HomePage_MyTasksSectionClickTaskLink" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.homepage.HomePageTestSuite -->
+      <class name="com.hrsoft.test.compensation.PlanOverviewPageTestSuite">
+        <methods>
+          <include name="SM_107_PlanOverView_PageChangeColumnOrder" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_105_106_PlanOverView_PageChangeColumnOrder" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.PlanOverviewPageTestSuite -->
+      <class name="com.hrsoft.test.compensation.DistributeFundTestSuite">
+        <methods>
+          <include name="SM_173_CompensationDistributionFund_holdBackAmounttAndDistAmountCalculation" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_174_CompensationDistributionFund_EnterBudgetAndVerifyByProxying" invocation-numbers="0"/>
+          <include name="SM_175_176_Verify_CascadingBudget_For_Rollup_Group" invocation-numbers="0"/>
+          <include name="SM_171_172_CompensationDistributionFund_OpenDistFundPageAndEnterBudget" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.DistributeFundTestSuite -->
+      <class name="com.hrsoft.test.datamanagement.ApiFeedTestSuite">
+        <methods>
+          <include name="SMAPI24_UMEI_API_apiFeedPreviewTest_UltiPerfRatingEmp"/>
+          <include name="SMAPI46_UMEI_API_apiFeedPreviewTest_AdpEmpSpare"/>
+          <include name="SMAPI16_UMEI_API_apiFeedPreviewTest_AdpJobCode"/>
+          <include name="SMAPI45_UMEI_API_apiFeedImportTest_AdpEmpSpares"/>
+          <include name="SMAPI31_UMEI_API_apiFeedImportTest_UltiPlaformEmpSpares"/>
+          <include name="SMAPI37_UMEI_API_previewGridAndCheckForTransformValueOfPartTimeFactorTest"/>
+          <include name="SMAPI12_UMEI_API_apiEndpointIdEditTest"/>
+          <include name="SMAPI23_UMEI_API_apiFeedPreviewTest_AdpMarkerData"/>
+          <include name="SMAPI07_UMEI_API_editADPSetIdAttributeTest"/>
+          <include name="SMAPI08_UMEI_API_editEndpointPathTest"/>
+          <include name="SMAPI04_UMEI_API_checkingUltiSetIdAttributeTest"/>
+          <include name="SMAPI14_UMEI_API_apiFeedPreviewTest_AdpDemographic"/>
+          <include name="SMAPI22_UMEI_API_apiFeedPreviewTest_UltiEmpSpare"/>
+          <include name="SMAPI05_UMEI_API_editUltiSetIdAttributeTest"/>
+          <include name="SMAPI41_UMEI_API_previewGridForActiveStatusOfRemoveTermTest"/>
+          <include name="SMAPI09_UMEI_API_isEndpointNameDisableTest"/>
+          <include name="teardown"/>
+          <include name="SMAPI39_UMEI_API_feedCloneInFeedMangementTest"/>
+          <include name="SMAPI30_UMEI_API_apiFeedPreviewTest_UltiPlatformEmpSpares"/>
+          <include name="SMAPI15_UMEI_API_apiFeedPreviewTest_UltiJobCode"/>
+          <include name="SMAPI40_UMEI_API_apiDataProviderFeedConfigureTest"/>
+          <include name="SMAPI06_UMEI_API_checkingADPSetIdAttributeTest"/>
+          <include name="SMAPI26_UMEI_API_apiFeedImportTest_AdpMarkerData"/>
+          <include name="SMAPI19_UMEI_API_apiFeedImportTest_UltiJobCode"/>
+          <include name="SMAPI11_UMEI_API_editTransformValueAndActiveStatusTest"/>
+          <include name="SMAPI27_UMEI_API_apiFeedImportTest_UltiPerfRatingEmp"/>
+          <include name="SMAPI17_UMEI_API_apiFeedImportTest_UltiDemographic"/>
+          <include name="SMAPI32_UMEI_API_isTransformNameCannotBeModifiedTest"/>
+          <include name="SMAPI21_UMEI_API_apiFeedImportTestUltiP4PDemographic"/>
+          <include name="SMAPI02_UMEI_API_editPartnerCfgMainApiUrl"/>
+          <include name="SMAPI38_UMEI_API_previewGridAndCheckForTransformValueOfCurrencyCodeTest"/>
+          <include name="SMAPI10_UMEI_API_editTransformActiveStatusTest"/>
+          <include name="SMAPI25_UMEI_API_apiFeedImportTest_UltiEmpSpare"/>
+          <include name="SMAPI20_UMEI_API_apiFeedPreviewTest_UltiP4PDemographic"/>
+          <include name="SMAPI44_UMEI_API_apiFeedImportTestAdpJobCode"/>
+          <include name="SMAPI18_UMEI_API_apiFeedImportTest_AdpDemographic"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SMAPI13_UMEI_API_apiFeedPreviewTest_UltiDemographic"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.datamanagement.ApiFeedTestSuite -->
+      <class name="com.hrsoft.test.compensation.CompOverviewTestSuite">
+        <methods>
+          <include name="SM_09C_CompViewPlanning_CanRevertPLanToConfigureStage" invocation-numbers="0"/>
+          <include name="SM_17_CompViewPlanningEnterNoteBasedOnEnvironmentRule" invocation-numbers="0"/>
+          <include name="SM_24_CompView_ChangeJob" invocation-numbers="0"/>
+          <include name="SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob" invocation-numbers="0"/>
+          <include name="SM_25_CompView_ChangeJob" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="SM_38_39_CompView_PlannerCanResetEnteredAwardAndChangedJob" invocation-numbers="0"/>
+          <include name="setupFramework"/>
+          <include name="SM_18_CompViewPlannerCanResetEnteredAwardAndChangedJob" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="SM_14_CompViewPlanningVerifyCoPlannerField" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.CompOverviewTestSuite -->
+      <class name="com.hrsoft.test.modelview.ModelViewTestSuite">
+        <methods>
+          <include name="SM_212_ModelView_SessionProcess_CanDoBulkUpdate"/>
+          <include name="SM_187_ModelViewCanCloneTemplateWithEditIconInSettingPage" invocation-numbers="0"/>
+          <include name="SM_198_ModelView_clickBrowsebuttonTopopupSearchAPP" invocation-numbers="0"/>
+          <include name="SM_213_ModelView_SessionProcess_CanDoBulkUpdate"/>
+          <include name="SM_26_ModelViewCalibrationFilters"/>
+          <include name="SM_194_196ModelView_UserPoolsDetails" invocation-numbers="0"/>
+          <include name="SM_219_220_221_ModelView_SessionProcess_UserActions"/>
+          <include name="SM_203_ModelView_ChangeCurrency" invocation-numbers="0"/>
+          <include name="SM_210_211_ModelView_SessionProcess_CanSelectManagerFromManagerList"/>
+          <include name="SM_177CreateModelviewSession" invocation-numbers="0"/>
+          <include name="SM_197_ModelView_clickAddPoolButtonForAddingNewPool" invocation-numbers="0"/>
+          <include name="SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus"/>
+          <include name="SM_200_ModelView_CanSaveMapping" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="SM_214_215_216_217_ModelView_SessionProcess_UserActions"/>
+          <include name="SM_199_ModelView_EditAnyRowValueInFieldMapping" invocation-numbers="0"/>
+          <include name="SM_189_191ModelView_AddAndSaveNewUnitAndCurrencyAndDelete" invocation-numbers="0"/>
+          <include name="SM_177AModelviewEditAnySessionByCloning" invocation-numbers="0"/>
+          <include name="SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved" invocation-numbers="0"/>
+          <include name="SM_201_ModelView_CanSaveMapping" invocation-numbers="0"/>
+          <include name="SM_206_207_208_209_ModelView_SessionProcess_CanSelectManagerFromManagerList"/>
+          <include name="SM_188_ModelViewEditManageCurrencyAndVerifyTheChanges" invocation-numbers="0"/>
+          <include name="SM_202_ModelView_CanDeleteSession" invocation-numbers="0"/>
+          <include name="SM_192_193ModelView_CreateNewCurrencySetAndDeleteIt" invocation-numbers="0"/>
+          <include name="SM_185ModelViewOpenSettingsPage" invocation-numbers="0"/>
+          <include name="SM_179AModelViewclickNewTemplatWhichPopupsTemplate" invocation-numbers="0"/>
+          <include name="SM_205_ModelView_SessionProcess_CanHideChart"/>
+          <include name="SM_182_ModelView_EditSessionAndVerifyItgotEdited" invocation-numbers="0"/>
+          <include name="SM_27_28_ModelViewCalibrationFilters"/>
+          <include name="SM_218_ModelView_SessionProcess_BulkLock"/>
+          <include name="SM_186_ModelViewCanEditTemplateWithEditIconInSettingPage" invocation-numbers="0"/>
+          <include name="SM_204_ModelView_SessionProcess_CanEnableOrDisable"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_178ModelviewEditAnySession" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.modelview.ModelViewTestSuite -->
+      <class name="com.hrsoft.test.datamanagement.FileFeedTestSuite">
+        <methods>
+          <include name="SM_UMEI_FILE_44_defineFeedPipeDelimeterChangeShouldBeImportedSuccessfully"/>
+          <include name="SM_UMEI_FILE_50_UMEI_validateShouldFailForPartialModeNewUserError"/>
+          <include name="SM_UMEI_FILE_41_editUmeiAttribute"/>
+          <include name="SM_UMEI_FILE_48_UMEI_validFunctionalHierInputFileShouldBeImportedSuccessfully"/>
+          <include name="SM_UMEI_FILE_33_UMEI_validateShouldFailForMultipleTopLevelManagers"/>
+          <include name="SM_UMEI_FILE_29_UMEI_previewAndImportShouldWorkIfValidationErrorIsLessThanThresholdElseAbort"/>
+          <include name="SM_UMEI_FILE_45_UMEI_periodFactorFormatValuesShouldBeImportedSuccessfully"/>
+          <include name="SM_UMEI_FILE_38_UMEI_previewShouldContainErrorRowsOnTop"/>
+          <include name="SM_UMEI_FILE_10_UMEI_previewValidateAndImportShouldFailForEmptyFile" invocation-numbers="0"/>
+          <include name="SM_UMEI_FILE_39_UMEI_importShouldBeSuccessAndItShouldFillDisplayName"/>
+          <include name="SM_UMEI_FILE_46_UMEI_lastNameWithNoEmptyValuesShouldBeImportedSuccessfully"/>
+          <include name="SM_UMEI_FILE_49_UMEI_validFunctionalCoPlannerFileShouldBeImportedSuccessfully"/>
+          <include name="teardown"/>
+          <include name="SM_UMEI_FILE_32_UMEI_dataFileDropDownListShouldBeProductSpecific"/>
+          <include name="SM_UMEI_FILE_43_UMEI_validateShouldFailForUserRoleFileInvalidRole"/>
+          <include name="SM_UMEI_FILE_35_importShouldFailForAbortImportFiveOrMoreHierarchyFound"/>
+          <include name="SM_UMEI_FILE_27_UMEI_validateShouldNotFail"/>
+          <include name="SM_UMEI_FILE_28_UMEI_importShouldFail"/>
+          <include name="SM_UMEI_FILE_26_UMEI_validateShouldFailForMANDATORYFILTERNAME_Filter" invocation-numbers="0"/>
+          <include name="SM_UMEI_FILE_34_UMEI_importShouldBeAbortedForAllInvalidRecords"/>
+          <include name="SM_UMEI_FILE_53_UMEI_validateAndImportShouldFailForMaxThresholdError"/>
+          <include name="SM_UMEI_FILE_25_UMEI_validateShouldFailForTopManagerMissing" invocation-numbers="0"/>
+          <include name="SM_UMEI_FILE_37_UMEI_feedFileShouldThrowErrorForMaxColumnPercentThreshold"/>
+          <include name="SM_UMEI_FILE_31_UMEI_productDropDownListShouldBeClientSpecific"/>
+          <include name="SM_UMEI_FILE_42_UMEI_userRoleFileShouldBeImportedSuccessfully"/>
+          <include name="SM_UMEI_FILE_52_UMEI_importShouldContinueForPartialModeFileWithNewUserError"/>
+          <include name="SM_UMEI_FILE_15_UMEI_feedFieldMappingShouldBeEditable" invocation-numbers="0"/>
+          <include name="SM_UMEI_FILE_30_UMEI_legacyFilesHeadersShouldBeReplacedWithFeedConfigOnImporting"/>
+          <include name="SM_UMEI_FILE_40_userAbleToSeeDetailsLogGridInStatusReports"/>
+          <include name="setupFramework"/>
+          <include name="SM_UMEI_FILE_51_UMEI_validateShouldFailForFILTERPOOLNAMEFilter"/>
+          <include name="setup"/>
+          <include name="SM_UMEI_FILE_36_UMEI_feedFileShouldThrowErrorForMissingRowData"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.datamanagement.FileFeedTestSuite -->
+      <class name="com.hrsoft.test.compensation.CompManageFilterTestSuite">
+        <methods>
+          <include name="SM_91_94_CompensationFilters_CreateNewFilterAndDelete" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setupFramework"/>
+          <include name="setup"/>
+          <include name="SM_88_90_CompensationFilters_copyAndDeleteFilter" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hrsoft.test.compensation.CompManageFilterTestSuite -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [SmokeTestSuite] -->

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-14T16:42:48 UTC" name="Default suite" finished-at="2023-11-14T16:43:47 UTC" duration-ms="59000">
+    <groups>
+      <group name="Smoke Test">
+        <method signature="LoginLogoutTestSuite.SM_00_loginAndLogout(com.hrsoft.utils.zerocell.TestDataExcel)[pri:0, instance:com.hrsoft.test.common.LoginLogoutTestSuite@33c911a1]" name="SM_00_loginAndLogout" class="com.hrsoft.test.common.LoginLogoutTestSuite"/>
+      </group> <!-- Smoke Test -->
+      <group name="Component.LoginPage">
+        <method signature="LoginLogoutTestSuite.SM_00_loginAndLogout(com.hrsoft.utils.zerocell.TestDataExcel)[pri:0, instance:com.hrsoft.test.common.LoginLogoutTestSuite@33c911a1]" name="SM_00_loginAndLogout" class="com.hrsoft.test.common.LoginLogoutTestSuite"/>
+      </group> <!-- Component.LoginPage -->
+    </groups>
+    <test started-at="2023-11-14T16:42:48 UTC" name="Default test" finished-at="2023-11-14T16:43:47 UTC" duration-ms="59000">
+      <class name="com.hrsoft.test.common.LoginLogoutTestSuite">
+        <test-method is-config="true" signature="setupFramework()[pri:0, instance:com.hrsoft.test.common.LoginLogoutTestSuite@33c911a1]" started-at="2023-11-14T16:42:48 UTC" name="setupFramework" finished-at="2023-11-14T16:42:48 UTC" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupFramework -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrsoft.test.common.LoginLogoutTestSuite@33c911a1]" started-at="2023-11-14T16:42:50 UTC" name="setup" finished-at="2023-11-14T16:42:54 UTC" duration-ms="3568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SM_00_loginAndLogout(com.hrsoft.utils.zerocell.TestDataExcel)[pri:0, instance:com.hrsoft.test.common.LoginLogoutTestSuite@33c911a1]" started-at="2023-11-14T16:42:54 UTC" name="SM_00_loginAndLogout" data-provider="SmokeTest" finished-at="2023-11-14T16:43:46 UTC" duration-ms="52326" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestDataExcel [testCase=SM_00_loginAndLogout, applicationURL=https://hrsofti-tcc2300-sqa.cloud.hrsoft.com/, userName=admin_user, password=hHlDIRSTJQiecn]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div[itemid='BUTTON_996295427193974'] button (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.120, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49685}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49685/devtoo..., se:cdpVersion: 118.0.5993.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34e03a39ebc1de4479e8d3db3d4bd337]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[itemid='BUTTON_996295427193974'] button (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.120, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49685}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49685/devtoo..., se:cdpVersion: 118.0.5993.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34e03a39ebc1de4479e8d3db3d4bd337
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:412)
+at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:390)
+at com.hrsoft.utils.seleniumfy.BasePage.click(BasePage.java:620)
+at com.hrsoft.gui.HRSoftPage.logOut(HRSoftPage.java:87)
+at com.hrsoft.test.common.LoginLogoutTestSuite.SM_00_loginAndLogout(LoginLogoutTestSuite.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SM_00_loginAndLogout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.hrsoft.test.common.LoginLogoutTestSuite@33c911a1]" started-at="2023-11-14T16:43:46 UTC" name="teardown" finished-at="2023-11-14T16:43:47 UTC" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.hrsoft.test.common.LoginLogoutTestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,472 @@
+<html>
+<head>
+<title>TestNG:  Test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 14 15:21:57 UTC 2023</td>
+</tr>
+<tr><td>Total time:</td><td>980 seconds (980615 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hrsoft.test.dataview.DataViewTestSuite.SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue()'><b>SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue</b><br>Test class: com.hrsoft.test.dataview.DataViewTestSuite<br>Parameters: TestDataExcel [testCase=SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@itemid=&apos;GRID_2344943517659758&apos;]//div[@column=&apos;0&apos;]/div/input (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2022&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55174}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55174/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee2bf69a1f3e6ebce779a859fffa2eeb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:409)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:387)
+	at com.hrsoft.utils.seleniumfy.BasePage.click(BasePage.java:617)
+	at com.hrsoft.gui.dataview.DataViewPage.selectAndAddSearchedGroup(DataViewPage.java:574)
+	at com.hrsoft.test.dataview.DataViewTestSuite.SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue(DataViewTestSuite.java:695)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace661139369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace661139369'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@itemid=&apos;GRID_2344943517659758&apos;]//div[@column=&apos;0&apos;]/div/input (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2022&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55174}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55174/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee2bf69a1f3e6ebce779a859fffa2eeb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:409)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:387)
+	at com.hrsoft.utils.seleniumfy.BasePage.click(BasePage.java:617)
+	at com.hrsoft.gui.dataview.DataViewPage.selectAndAddSearchedGroup(DataViewPage.java:574)
+	at com.hrsoft.test.dataview.DataViewTestSuite.SM50_Dataview_DataviewExplorer_SearchGroupAndVerifyWithDropdownValue(DataViewTestSuite.java:695)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>98</td>
+<td>com.hrsoft.test.dataview.DataViewTestSuite@5488b5c5</td></tr>
+<tr>
+<td title='com.hrsoft.test.common.GenericTestSuite.SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav()'><b>SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav</b><br>Test class: com.hrsoft.test.common.GenericTestSuite<br>Parameters: TestDataExcel [testCase=SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.lang.reflect.InvocationHandler.invoke(Object, java.lang.reflect.Method, Object[])&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)
+	at com.hrsoft.test.common.GenericTestSuite.SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav(GenericTestSuite.java:139)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1650275694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1650275694'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.lang.reflect.InvocationHandler.invoke(Object, java.lang.reflect.Method, Object[])&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)
+	at com.hrsoft.test.common.GenericTestSuite.SM_09_CompView_Planning_ManagerCanOpenOwnLinkFromLeftNav(GenericTestSuite.java:139)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.hrsoft.test.common.GenericTestSuite@62515a47</td></tr>
+<tr>
+<td title='com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM29_RewardsView_SearchForManagersGroups()'><b>SM29_RewardsView_SearchForManagersGroups</b><br>Test class: com.hrsoft.test.rewardsview.ManagerViewTestSuite<br>Parameters: TestDataExcel [testCase=SM29_RewardsView_SearchForManagersGroups, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.lang.reflect.InvocationHandler.invoke(Object, java.lang.reflect.Method, Object[])&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)
+	at com.hrsoft.db.CompViewDbHelper.getEmployeesByManagerGuid(CompViewDbHelper.java:407)
+	at com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM29_RewardsView_SearchForManagersGroups(ManagerViewTestSuite.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace668417314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace668417314'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.lang.reflect.InvocationHandler.invoke(Object, java.lang.reflect.Method, Object[])&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)
+	at com.hrsoft.db.CompViewDbHelper.getEmployeesByManagerGuid(CompViewDbHelper.java:407)
+	at com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM29_RewardsView_SearchForManagersGroups(ManagerViewTestSuite.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.hrsoft.test.rewardsview.ManagerViewTestSuite@2424686b</td></tr>
+<tr>
+<td title='com.hrsoft.test.compensation.PlanningPageTestSuite.SM_139_SM140_PlanningGrid_Verifications()'><b>SM_139_SM140_PlanningGrid_Verifications</b><br>Test class: com.hrsoft.test.compensation.PlanningPageTestSuite<br>Parameters: TestDataExcel [testCase=SM_139_SM140_PlanningGrid_Verifications, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@actiontype=&apos;ResetGroupAwards&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2022&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55774}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55774/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b470129a35547e97364980f5453a548
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementClickable(BasePage.java:534)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementClickable(BasePage.java:512)
+	at com.hrsoft.utils.seleniumfy.BasePage.click(BasePage.java:618)
+	at com.hrsoft.gui.compensation.PlanningPage.clickResetAwards(PlanningPage.java:326)
+	at com.hrsoft.test.compensation.PlanningPageTestSuite.SM_139_SM140_PlanningGrid_Verifications(PlanningPageTestSuite.java:244)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace493738824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace493738824'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@actiontype=&apos;ResetGroupAwards&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2022&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55774}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55774/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b470129a35547e97364980f5453a548
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementClickable(BasePage.java:534)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementClickable(BasePage.java:512)
+	at com.hrsoft.utils.seleniumfy.BasePage.click(BasePage.java:618)
+	at com.hrsoft.gui.compensation.PlanningPage.clickResetAwards(PlanningPage.java:326)
+	at com.hrsoft.test.compensation.PlanningPageTestSuite.SM_139_SM140_PlanningGrid_Verifications(PlanningPageTestSuite.java:244)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>82</td>
+<td>com.hrsoft.test.compensation.PlanningPageTestSuite@1efdcd5</td></tr>
+<tr>
+<td title='com.hrsoft.test.modelview.ModelViewTestSuite.SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus()'><b>SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus</b><br>Test class: com.hrsoft.test.modelview.ModelViewTestSuite<br>Parameters: TestDataExcel [testCase=SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus, applicationURL=https://hrsofti-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=ADQbxT1TjyiI9PM]</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Discarded&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2022&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55927}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55927/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af5573738b37b5acce49f531be1f3a19
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:409)
+	at com.hrsoft.utils.seleniumfy.BasePage.getText(BasePage.java:1431)
+	at com.hrsoft.utils.seleniumfy.BasePage.getText(BasePage.java:1421)
+	at com.hrsoft.gui.modelview.ModelViewPage.statusList(ModelViewPage.java:81)
+	at com.hrsoft.test.modelview.ModelViewTestSuite.SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus(ModelViewTestSuite.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace847598883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace847598883'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Discarded&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2022&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.67, ms:edgeOptions: {debuggerAddress: localhost:55927}, msedge: {msedgedriverVersion: 114.0.1823.82 (ac4903679dd6..., userDataDir: C:\Users\KIRAN~1.YAJ\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55927/devtoo..., se:cdpVersion: 114.0.1823.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af5573738b37b5acce49f531be1f3a19
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.hrsoft.utils.seleniumfy.BasePage.waitForElementVisible(BasePage.java:409)
+	at com.hrsoft.utils.seleniumfy.BasePage.getText(BasePage.java:1431)
+	at com.hrsoft.utils.seleniumfy.BasePage.getText(BasePage.java:1421)
+	at com.hrsoft.gui.modelview.ModelViewPage.statusList(ModelViewPage.java:81)
+	at com.hrsoft.test.modelview.ModelViewTestSuite.SM_184ModelViewSelectDiscardStatusFromDropdownAndVerifySessionStatus(ModelViewTestSuite.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>72</td>
+<td>com.hrsoft.test.modelview.ModelViewTestSuite@faa3fed</td></tr>
+<tr>
+<td title='com.hrsoft.test.compensation.CompOverviewTestSuite.SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob()'><b>SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob</b><br>Test class: com.hrsoft.test.compensation.CompOverviewTestSuite<br>Parameters: TestDataExcel [testCase=SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hrsoft.test.compensation.CompOverviewTestSuite.SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob(CompOverviewTestSuite.java:161)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1338252474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1338252474'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.hrsoft.test.compensation.CompOverviewTestSuite.SM_19_CompView_PlannerCanResetEnteredAwardAndChangedJob(CompOverviewTestSuite.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>220</td>
+<td>com.hrsoft.test.compensation.CompOverviewTestSuite@667e34b1</td></tr>
+<tr>
+<td title='com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM30_RewardsView_SearchForManagerGroup_ThroughEmployee()'><b>SM30_RewardsView_SearchForManagerGroup_ThroughEmployee</b><br>Test class: com.hrsoft.test.rewardsview.ManagerViewTestSuite<br>Parameters: TestDataExcel [testCase=SM30_RewardsView_SearchForManagerGroup_ThroughEmployee, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.lang.reflect.InvocationHandler.invoke(Object, java.lang.reflect.Method, Object[])&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)
+	at com.hrsoft.db.CompViewDbHelper.getEmployeesByManagerGuid(CompViewDbHelper.java:407)
+	at com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM30_RewardsView_SearchForManagerGroup_ThroughEmployee(ManagerViewTestSuite.java:142)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1662765556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1662765556'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.lang.reflect.InvocationHandler.invoke(Object, java.lang.reflect.Method, Object[])&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy18.compPlanId(Unknown Source)
+	at com.hrsoft.db.CompViewDbHelper.getEmployeesByManagerGuid(CompViewDbHelper.java:407)
+	at com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM30_RewardsView_SearchForManagerGroup_ThroughEmployee(ManagerViewTestSuite.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.hrsoft.test.rewardsview.ManagerViewTestSuite@2424686b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hrsoft.test.dataview.DataViewTestSuite.SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid()'><b>SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid</b><br>Test class: com.hrsoft.test.dataview.DataViewTestSuite<br>Parameters: TestDataExcel [testCase=SM_57_DataviewReport_Group_By_Dropdown_in_the_Grid, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td></td>
+<td>41</td>
+<td>com.hrsoft.test.dataview.DataViewTestSuite@5488b5c5</td></tr>
+<tr>
+<td title='com.hrsoft.test.rewardsview.ManagerViewTestSuite.SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails()'><b>SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails</b><br>Test class: com.hrsoft.test.rewardsview.ManagerViewTestSuite<br>Parameters: TestDataExcel [testCase=SM_23_RewardsViewManagerViewShareFunctionalFailIfPlanFails, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td></td>
+<td>61</td>
+<td>com.hrsoft.test.rewardsview.ManagerViewTestSuite@2424686b</td></tr>
+<tr>
+<td title='com.hrsoft.test.modelview.ModelViewTestSuite.SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved()'><b>SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved</b><br>Test class: com.hrsoft.test.modelview.ModelViewTestSuite<br>Parameters: TestDataExcel [testCase=SM_183_ModelView_EditSessionAndDiscardItAndVerifySessionGotRemoved, applicationURL=https://hrsofti-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=ADQbxT1TjyiI9PM]</td>
+<td></td>
+<td>50</td>
+<td>com.hrsoft.test.modelview.ModelViewTestSuite@faa3fed</td></tr>
+<tr>
+<td title='com.hrsoft.test.compensation.CompOverviewTestSuite.SM_14_CompViewPlanningVerifyCoPlannerField()'><b>SM_14_CompViewPlanningVerifyCoPlannerField</b><br>Test class: com.hrsoft.test.compensation.CompOverviewTestSuite<br>Parameters: TestDataExcel [testCase=SM_14_CompViewPlanningVerifyCoPlannerField, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td></td>
+<td>137</td>
+<td>com.hrsoft.test.compensation.CompOverviewTestSuite@667e34b1</td></tr>
+<tr>
+<td title='com.hrsoft.test.compensation.ReviewingPageTestSuite.SM_16_CompViewReviewPage_PlanningPaginationAndScrolling()'><b>SM_16_CompViewReviewPage_PlanningPaginationAndScrolling</b><br>Test class: com.hrsoft.test.compensation.ReviewingPageTestSuite<br>Parameters: TestDataExcel [testCase=SM_16_CompViewReviewPage_PlanningPaginationAndScrolling, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td></td>
+<td>118</td>
+<td>com.hrsoft.test.compensation.ReviewingPageTestSuite@1c6e0a08</td></tr>
+<tr>
+<td title='com.hrsoft.test.compensation.PlanningPageTestSuite.SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible()'><b>SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible</b><br>Test class: com.hrsoft.test.compensation.PlanningPageTestSuite<br>Parameters: TestDataExcel [testCase=SM_129_Compensation_VerifyEmpHistoryColumnAndHistoryAreVisible, applicationURL=https://mercfin-tcc2200-sqa.cloud.hrsoft.com/, userName=admin_user, password=eiwKka2yfPwwPaY]</td>
+<td></td>
+<td>55</td>
+<td>com.hrsoft.test.compensation.PlanningPageTestSuite@1efdcd5</td></tr>
+</table><p>
+</body>
+</html>

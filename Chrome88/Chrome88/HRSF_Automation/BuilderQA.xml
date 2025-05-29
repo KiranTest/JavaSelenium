@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SmokeTestSuite">
+	<listeners>
+		<listener class-name="com.hrsoft.reports.ExtentListener" />
+	</listeners>
+	<test name="SmokeTest">
+		<classes>
+			<class name="com.hrsoft.test.buiderqa.E2eDataObjectCreation" />
+		</classes>
+	</test> <!--
+	SmokeTest -->
+</suite> <!--
+SmokeTestSuite4/5/2023 -->
